@@ -6,7 +6,6 @@ const song = document.getElementById("song")
 
 nap.addEventListener("click",open)
 function open(){
-    song.load();
     nap.style.animation='open linear 2s forwards';
     setTimeout(function(){lixi.style.animation='push-up linear 2s forwards';   
     nap.style.zIndex=0;},3000)
