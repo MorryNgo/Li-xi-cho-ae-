@@ -3,7 +3,7 @@ const thiep= document.querySelector("body > div > div.bia")
 const nap = document.querySelector("body > div > div.nap");
 const lixi = document.querySelector("body > div > div.li-xi")
 const song = document.getElementById("song")
-
+song.load()
 nap.addEventListener("click",open)
 function open(){
     nap.style.animation='open linear 2s forwards';
