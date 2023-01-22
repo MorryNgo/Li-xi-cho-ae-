@@ -1,4 +1,11 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
 .box{
+
     height: 600px;
     width: 300px;
     position:relative;
@@ -44,6 +51,7 @@
     
 }
 
+
 @keyframes disappeared {
     from{opacity:1}
     to{opacity:0}
@@ -59,16 +67,28 @@
         height:500px;
     }
 }
+
+@keyframes changecolor {
+    from{
+        background-color: whitesmoke;
+    }
+    to{background-color:rgba(8, 136, 255, 0.432)}
+}
+
+@keyframes flyup {
+    from{top:101%}
+    to{top:-101%}
+}
 /*     animation: open linear 2s; */
 
 .li-xi{
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 200px;
     width: 300px;;
+    font-size: 50px;;
     background-image:url(https://img.freepik.com/free-photo/white-paper-texture_1194-5416.jpg?w=360);
     z-index:0;
     margin:auto
 }
+
