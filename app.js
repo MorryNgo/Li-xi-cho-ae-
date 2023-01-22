@@ -6,7 +6,6 @@ const song = document.getElementById("song")
 
 nap.addEventListener("click",open)
 function open(){
-
     nap.style.animation='open linear 2s forwards';
     setTimeout(function(){lixi.style.animation='push-up linear 2s forwards';   
     nap.style.zIndex=0;},3000)
@@ -17,9 +16,8 @@ function open(){
         setTimeout(() => {
             nap.remove()
             thiep.remove()
-            lixi.style.background="url(https://github.com/MorryNgo/li-xi/raw/main/unknown_1.png)"
-
             song.play();    
+            lixi.style.background="url(https://github.com/MorryNgo/li-xi/raw/main/unknown_1.png)"
             lixi.style.backgroundSize="cover"
             box.style.height = "0"
             box.style.width="auto"
