@@ -3,9 +3,10 @@ const thiep= document.querySelector("body > div > div.bia")
 const nap = document.querySelector("body > div > div.nap");
 const lixi = document.querySelector("body > div > div.li-xi")
 const song = document.getElementById("song")
-song.load()
+
 nap.addEventListener("click",open)
 function open(){
+    song.load()
     nap.style.animation='open linear 2s forwards';
     setTimeout(function(){lixi.style.animation='push-up linear 2s forwards';   
     nap.style.zIndex=0;},3000)
